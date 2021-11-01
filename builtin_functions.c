@@ -19,15 +19,15 @@ void env(char **tokenized_command __attribute__((unused)))
 }
 
 /**
- * Quit - exits the shell
- * @tokenized command entered
+ * quit - exits the shell
+ * @tokenized_command: command entered
  *
  * Return: void
  */
 
 void quit(char **tokenized_command)
 {
-	int num_token = 0, arg; 
+	int num_token = 0, arg;
 
 	for (; tokenized_command[num_token] != NULL; num_token++)
 		;
