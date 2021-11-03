@@ -44,7 +44,7 @@ extern int status;
 void print(char *, int);
 char **tokenizer(char *, char *);
 void remove_newline(char *);
-int strlen(char *);
+int _strlen(char *);
 void _strcpy(char *, char *);
 
 /*helpers2*/

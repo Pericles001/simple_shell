@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- *_strcmp - compare two strings 
+ *_strcmp - compare two strings
  *@first: first string to be compared
  *@second: second string to be compared
  *
@@ -35,7 +35,7 @@ char *_strcat(char *destination, char *source)
 	int len_dest = _strlen(destination);
 	int len_source = _strlen(source);
 
-	new_string = malloc(sizeof(*new_string) * (len_dest + len_source + ));
+	new_string = malloc(sizeof(*new_string) * (len_dest + len_source + 1));
 	_strcpy(destination, new_string);
 	_strcpy(source, new_string + len_dest);
 	new_string[len_dest + len_source] = '\0';

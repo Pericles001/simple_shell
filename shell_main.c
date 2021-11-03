@@ -5,7 +5,7 @@
  * 		 Pericles Adjovi
  * 
  * Description:
- * the basic_shell building block 
+ * the basic_shell building block
  */
 
 
@@ -33,15 +33,15 @@ int main(int argc __attribute__((unused)), char **argv)
 	size_t n = 0;
 
 	/**
-	 * initializing the prompt signal 
-	 * 
+	 * initializing the prompt signal
+	 *
 	 * Description:
 	 * Display a prompt and wait for the user to type a command
 	 * prompt is displayed again each time a command has been executed
-	 * 
+	 *
 	 * implements the Ctrl_c function
 	 */
-	
+
 
 	signal(SIGINT, ctrl_c_handler);
 	shell_name = argv[0];
@@ -59,11 +59,11 @@ int main(int argc __attribute__((unused)), char **argv)
 			exit(status);
 		}
 		/**
-		 * parsing the line arguments 
-		 * 
+		 * parsing the line arguments
+		 *
 		 * tokenizer - tokenizes input and stores it into an array
 		 * parse_command - determines the type of command
-		 * 
+		 *
 		 */
 			remove_newline(line);
 			remove_comment(line);
@@ -78,7 +78,7 @@ int main(int argc __attribute__((unused)), char **argv)
 				break;
 			}
 			type_command = parse_command(current_command[0]);
-			
+
 			/* initializer -   */
 			initalizer(current_command, type_command);
 			free(current_command);
