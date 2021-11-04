@@ -35,7 +35,7 @@ typedef struct map
 } function_map;
 
 extern char **environ;
-extern char **line;
+extern char *line;
 extern char **commands;
 extern char *shell_name;
 extern int status;
