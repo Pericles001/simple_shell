@@ -91,14 +91,14 @@ int main(int argc __attribute__((unused)), char **argv)
 }
 
 		/**
-		 * execute - starts exectuting everything
+		 * initializer - starts executing everything
 		 * @current_command: try to check current token
 		 * @type_command: parse token
 		 *
 		 * Return: void function
 		 */
 
-		void execute(char **current_command, int type_command)
+		void initializer(char **current_command, int type_command)
 		{
 			pid_t PID;
 
@@ -145,7 +145,7 @@ int main(int argc __attribute__((unused)), char **argv)
 							break;
 						}
 						type_command = parse_command(current_command[0]);
-						initalizer(current_command, type_command);
+						initializer(current_command, type_command);
 						free(current_command);
 					}
 					free(commands);
