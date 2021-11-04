@@ -58,7 +58,7 @@ int _strspn(char *str1, char *str2)
 	while (str1[i] != '\0')
 	{
 		if (_strchr(str2, str1[i]) == NULL)
-				break;
+			break;
 		match++;
 		i++;
 	}
@@ -80,7 +80,7 @@ int _strcspn(char *str1, char *str2)
 
 	for (i = 0; str1[i] != '\0'; i++)
 	{
-		if ( _strchr(str2, str1[i]) != NULL)
+		if (_strchr(str2, str1[i]) != NULL)
 			break;
 		len++;
 	}
