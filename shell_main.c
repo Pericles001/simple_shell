@@ -2,7 +2,7 @@
 
 /**
  * Auth: Emma Udeji
- * 		 Pericles Adjovi
+ *	Pericles Adjovi
  * 
  * Description:
  * the basic_shell building block
@@ -109,7 +109,7 @@ int main(int argc __attribute__((unused)), char **argv)
 					execute_command(current_command, type_command);
 				else
 				{
-					waitpid(child, &status, 0);
+					waitpid(PID, &status, 0);
 					status >>= 8;
 				}
 			}
