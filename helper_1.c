@@ -66,7 +66,7 @@ int _strspn(char *str1, char *str2)
 }
 
 /**
- *strcspn - computes segment of str1 which consists of characters not in str2
+ *_strcspn - computes segment of str1 which consists of characters not in str2
  *@str1: string to be searched
  *@str2: string to be used
  *
@@ -74,7 +74,7 @@ int _strspn(char *str1, char *str2)
  */
 
 
-int strcspn(char *str1, char *str2)
+int _strcspn(char *str1, char *str2)
 {
 	int len = 0, i;
 
