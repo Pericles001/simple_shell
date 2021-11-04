@@ -11,7 +11,7 @@ void env(char **tokenized_command __attribute__((unused)))
 {
 	int i;
 
-	for (i = 0, environ[i] != NULL; i++)
+	for (i = 0; environ[i] != NULL; i++)
 	{
 		print(environ[i], STDOUT_FILENO);
 		print("\n", STDOUT_FILENO);
@@ -33,7 +33,7 @@ void quit(char **tokenized_command)
 		;
 	if (num_token == 1)
 	{
-		free(tokenize_command);
+		free(tokenized_command);
 		free(line);
 		free(commands);
 		exit(status);
